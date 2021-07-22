@@ -1,0 +1,267 @@
+body{
+	font-family: 'Cuprum', sans-serif !important;
+	font-size: 17px !important;
+}
+
+/*
+footer
+ */
+.footer{
+	background-color:black;
+	width: 100%;
+	height: 150px;
+}
+
+.footer-information{
+	width: 100%;
+}
+
+.footer-flex{
+	height: 100%;
+	align-items: center;
+	display:flex;
+}
+
+.footer-information-span{
+	float: right;
+}
+@media (max-width: 400px){
+	.footer-information-span{
+		float: left;
+	}
+}
+/*
+ААА
+ */
+.header{
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 10px 100px;
+	justify-content: space-between;
+	max-height: 250px;
+}
+
+.header-bot{
+	width: 100%;
+	padding: 0px 50px;
+}
+
+.body{
+	padding: 0px 150px;
+}
+
+footer{
+	padding: 0px 150px;
+}
+.myblock{
+	margin: 30px 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.myblock-block1{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.myblock-block2{
+	width: 60%;
+}
+
+h1{
+	font-weight: bold !important;
+}
+
+/*
+адаптивная табличка
+ */
+
+.table-wrap{
+	text-align: center;
+	width: 100%;
+	background-color: #fff;
+	color: #000;
+}
+
+table {
+	border: none;
+	margin:0;
+	padding:0;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+table tr {
+	padding: 5px;
+}
+
+table th, table td {
+	padding: 3px 10px;
+	text-align: left;
+	border: 3px solid white;
+}
+
+.table-div{
+	border: 3px solid white;
+}
+
+.table-div-header{
+	padding: 3px 10px;
+	width: 100%;
+	background-color: #FFE600;
+}
+
+.table-div-td{
+	padding: 3px 10px;
+	background-color: #EFF0EF;
+}
+
+.table-div-td-1{
+	width: 70%;
+}
+
+.table-div-td-2{
+	width: 30%;
+}
+
+table th {
+	color: black;
+	background-color: #FFE600;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: left;
+}
+
+table td{
+	background-color: #EFF0EF;
+	vertical-align: top;
+}
+
+.myblock-block1 > img{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.myblock-block3{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 38%;
+}
+
+.myblock-block4{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 38%;
+	max-height: 275px;
+}
+
+.myblock-block3 > img{
+	width: 24%
+}
+
+.myblock-block4 > img{
+	width: 33%
+}
+
+.myblock2{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.galka{
+	border: 1px solid black;
+	width: 15px;
+	height: 15px;
+	margin-bottom: 2px;
+	float: left;
+}
+
+@media screen and (max-width: 940px) {
+	table {
+		border: 0;
+	}
+	table thead {
+		display: none;
+	}
+	table tr {
+		margin-bottom: 10px;
+		display: block;
+		border-bottom: 2px solid #ddd;
+	}
+	table td {
+		display: block;
+		text-align: right;
+		font-size: 13px;
+		border-bottom: 1px dotted #ccc;
+		border-right: 1px solid transparent;
+	}
+	table td:last-child {
+		border-bottom: 0;
+	}
+	table td:before {
+		content: attr(data-label);
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: left;
+		margin-right: 10px;
+	}
+
+	.myblock{
+		flex-direction: column;
+	}
+
+	.vertical-adaptive{
+		flex-direction: row;
+		justify-content: space-between !important;
+	}
+
+	.myblock-block1{
+		flex-direction: row;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.myblock-block1 > img{
+		width: 45%;
+	}
+
+	.myblock-block2{
+		width: 100%;
+		text-align: center;
+		margin-top: 30px;
+	}
+
+	h1 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 700px) {
+	.body {
+		padding: 0 10px;
+	}
+
+	footer{
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 600px) {
+	.header{
+		padding: 10px;
+	}
+
+	.header-bot{
+		padding: 0px 10px;
+	}
+}
+
+.mytable1 tbody > tr > td{
+	width: 20%;
+}
